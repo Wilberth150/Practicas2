@@ -1,0 +1,30 @@
+/* 
+Institución: Instituto Politécnico Nacional - IPN 
+Plantel: Escuela Superior de Ingeniería Mecánica y Eléctrica 
+Unidad: ESIME - Culhuacán 
+Materia: Fundamentos de programación 
+Grupo: 1MV15 
+Nombre: Wilberth Salatiel Rosas Huerta
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int tabla;
+
+    // Solicitar al usuario el número de tabla de multiplicación
+    printf("Ingrese el número de tabla de multiplicación: ");
+    scanf("%d", &tabla);
+
+    // Inicializar el contador para las iteraciones del bucle
+    int contador = 1;
+
+    // Mostrar los resultados de la tabla del 1 al 10 utilizando un solo printf de forma dinámica
+    while (contador <= 10) {
+        printf("Valor solicitado x %d = %d\n", contador, tabla * contador);
+        contador++; // Incrementar el contador
+    }
+
+    return 0;
+}
