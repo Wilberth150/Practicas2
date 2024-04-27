@@ -1,0 +1,58 @@
+/* 
+Institucion: Instituto Politecnico Nacional - IPN 
+Plantel: Escuela Superior de Ingenieria Mecanica y Electrica 
+Unidad: ESIME - Culhuacan 
+Materia: Fundamentos de programacion 
+Grupo: 1MV15 
+Nombre: Wilberth Salatiel Rosas Huerta
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    // Declaracion de variables
+    int numero1, numero2, numero3;
+
+    // Solicitar al usuario que ingrese tres numeros enteros
+    printf("Ingrese el primer numero entero: ");
+    scanf("%d", &numero1);
+    printf("Ingrese el segundo numero entero: ");
+    scanf("%d", &numero2);
+    printf("Ingrese el tercer numero entero: ");
+    scanf("%d", &numero3);
+
+    // Determinar el numero mayor y el numero menor
+    int numero_mayor, numero_menor;
+
+    // Asignar el primer numero como el mayor y el menor inicialmente
+    numero_mayor = numero1;
+    numero_menor = numero1;
+
+    // Actualizar el numero mayor si es necesario
+    if (numero2 > numero_mayor) {
+        numero_mayor = numero2;
+    }
+    if (numero3 > numero_mayor) {
+        numero_mayor = numero3;
+    }
+
+    // Actualizar el numero menor si es necesario
+    if (numero2 < numero_menor) {
+        numero_menor = numero2;
+    }
+    if (numero3 < numero_menor) {
+        numero_menor = numero3;
+    }
+
+    // Imprimir el numero mayor y el numero menor
+    printf("El numero mayor es: %d\n", numero_mayor);
+    printf("El numero menor es: %d\n", numero_menor);
+
+    // Verificar si los numeros son iguales
+    if (numero1 == numero2 && numero2 == numero3) {
+        printf("Los tres numeros son iguales.\n");
+    }
+
+    return 0;
+}
