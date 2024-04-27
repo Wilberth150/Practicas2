@@ -1,0 +1,43 @@
+/* 
+Institución: Instituto Politécnico Nacional - IPN 
+Plantel: Escuela Superior de Ingeniería Mecánica y Eléctrica 
+Unidad: ESIME - Culhuacán 
+Materia: Fundamentos de programación 
+Grupo: 1MV15 
+Nombre: Wilberth Salatiel Rosas Huerta
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int opcion;
+
+    // Solicitar al usuario un valor entero
+    printf("Ingrese un valor entero: ");
+    scanf("%d", &opcion);
+
+    // Utilizar switch-case para dirigirse al caso correspondiente
+    switch (opcion) {
+        case 1:
+            printf("Usted entró al case 1\n");
+            break;
+        case 2:
+            printf("Usted entró al case 2\n");
+            break;
+        case 3:
+            printf("Usted entró al case 3\n");
+            break;
+        case 4:
+            printf("Usted entró al case 4\n");
+            break;
+        case 5:
+            printf("Usted entró al case 5\n");
+            break;
+        default:
+            printf("No contamos con esa opción\n");
+            break;
+    }
+
+    return 0;
+}
