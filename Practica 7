@@ -1,0 +1,67 @@
+/* 
+Institución: Instituto Politécnico Nacional - IPN 
+Plantel: Escuela Superior de Ingeniería Mecánica y Eléctrica 
+Unidad: ESIME - Culhuacán 
+Materia: Fundamentos de programación 
+Grupo: 1MV15 
+Nombre: Wilberth Salatiel Rosas Huerta
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int opcion;
+
+    // Mostrar el menú y solicitar una opción al usuario
+    printf("Seleccione una opción:\n");
+    printf("1. Suma\n2. Resta\n3. Multiplicación\n4. División\n");
+    printf("5. Residuo\n6. Función\n7. Raíz cuadrada\n8. Potencia\n");
+    printf("9. Área de triángulo\n10. Área de rectángulo\n11. Salir\n");
+
+    // Solicitar al usuario que ingrese una opción
+    printf("Ingrese una opción (1-11): ");
+    scanf("%d", &opcion);
+
+    // Validar la opción ingresada
+    switch (opcion) {
+        case 1:
+            printf("Usted seleccionó la operación: 1. Suma\n");
+            break;
+        case 2:
+            printf("Usted seleccionó la operación: 2. Resta\n");
+            break;
+        case 3:
+            printf("Usted seleccionó la operación: 3. Multiplicación\n");
+            break;
+        case 4:
+            printf("Usted seleccionó la operación: 4. División\n");
+            break;
+        case 5:
+            printf("Usted seleccionó la operación: 5. Residuo\n");
+            break;
+        case 6:
+            printf("Usted seleccionó la operación: 6. Función\n");
+            break;
+        case 7:
+            printf("Usted seleccionó la operación: 7. Raíz cuadrada\n");
+            break;
+        case 8:
+            printf("Usted seleccionó la operación: 8. Potencia\n");
+            break;
+        case 9:
+            printf("Usted seleccionó la operación: 9. Área de triángulo\n");
+            break;
+        case 10:
+            printf("Usted seleccionó la operación: 10. Área de rectángulo\n");
+            break;
+        case 11:
+            printf("Usted seleccionó la operación: 11. Salir\n");
+            break;
+        default:
+            printf("Opción no válida\n");
+            break;
+    }
+
+    return 0;
+}
