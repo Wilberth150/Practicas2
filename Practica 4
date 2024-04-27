@@ -30,49 +30,36 @@ int main() {
     printf("Ingrese la opción deseada: ");
     scanf("%d", &opcion);
 
-    // Validar si la opción está dentro del rango (1 a 11)
+    // Validar si la opción está dentro del rango (1 a 11) y mostrar mensaje correspondiente
     if (opcion >= 1 && opcion <= 11) {
-        // Opción válida: imprimir el mensaje correspondiente
         printf("Usted seleccionó la operación: %d - ", opcion);
-        switch (opcion) {
-            case 1:
-                printf("Suma\n");
-                break;
-            case 2:
-                printf("Resta\n");
-                break;
-            case 3:
-                printf("Multiplicación\n");
-                break;
-            case 4:
-                printf("División\n");
-                break;
-            case 5:
-                printf("Residuo\n");
-                break;
-            case 6:
-                printf("Función\n");
-                break;
-            case 7:
-                printf("Raíz cuadrada\n");
-                break;
-            case 8:
-                printf("Potencia\n");
-                break;
-            case 9:
-                printf("Área de triángulo\n");
-                break;
-            case 10:
-                printf("Área de rectángulo\n");
-                break;
-            case 11:
-                printf("Salir\n");
-                break;
+        if (opcion == 1) {
+            printf("Suma\n");
+        } else if (opcion == 2) {
+            printf("Resta\n");
+        } else if (opcion == 3) {
+            printf("Multiplicación\n");
+        } else if (opcion == 4) {
+            printf("División\n");
+        } else if (opcion == 5) {
+            printf("Residuo\n");
+        } else if (opcion == 6) {
+            printf("Función\n");
+        } else if (opcion == 7) {
+            printf("Raíz cuadrada\n");
+        } else if (opcion == 8) {
+            printf("Potencia\n");
+        } else if (opcion == 9) {
+            printf("Área de triángulo\n");
+        } else if (opcion == 10) {
+            printf("Área de rectángulo\n");
+        } else if (opcion == 11) {
+            printf("Salir\n");
         }
     } else {
-        // Opción no válida: imprimir mensaje de error
         printf("Opción no válida. Por favor seleccione una opción del 1 al 11.\n");
     }
 
     return 0;
 }
+
