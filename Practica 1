@@ -1,0 +1,39 @@
+/* 
+Institución: Instituto Politécnico Nacional - IPN 
+Plantel: Escuela Superior de Ingeniería Mecánica y Eléctrica 
+Unidad: ESIME - Culhuacán 
+Materia: Fundamentos de programación 
+Grupo: 1MV15 
+Nombre: Wilberth Salatiel Rosas Huerta
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main() {
+    // Declaración de variables
+    int valor1, valor2;
+
+    // Solicitar al usuario que ingrese dos numeros enteros
+    printf("Ingrese el primer valor entero: ");
+    scanf("%d", &valor1);
+    printf("Ingrese el segundo valor entero: ");
+    scanf("%d", &valor2);
+
+    // Comparar los valores para determinar el mayor y el menor
+    if (valor1 > valor2) {
+        // Si el primer valor es mayor
+        printf("El valor mayor es: %d\n", valor1);
+        printf("El valor menor es: %d\n", valor2);
+    } else if (valor2 > valor1) {
+        // Si el segundo numero es mayor
+        printf("El valor mayor es: %d\n", valor2);
+        printf("El valor menor es: %d\n", valor1);
+    } else {
+        // Si los numeros son iguales
+        printf("Los dos valores son iguales: %d\n", valor1);
+    }
+
+    return 0;
+}
