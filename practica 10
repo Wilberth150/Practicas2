@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int columnas, filas;
+
+    // Solicitar al usuario que ingrese dos valores enteros
+    printf("Ingrese el número de columnas: ");
+    scanf("%d", &columnas);
+    printf("Ingrese el número de filas: ");
+    scanf("%d", &filas);
+
+    // Cambiar el color del fondo de pantalla y el color de las letras
+    system("color 1F"); // Letras blancas sobre fondo azul
+
+    // Imprimir la matriz utilizando un bucle for
+    printf("Resultado:\n");
+    for (int i = 0; i < filas; i++) {
+        for (int j = 0; j < columnas; j++) {
+            printf("*");
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
