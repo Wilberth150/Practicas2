@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int primerValor, numInteracciones;
+
+    // Solicitar al usuario que ingrese dos valores enteros
+    printf("Ingrese el primer valor entero: ");
+    scanf("%d", &primerValor);
+    printf("Ingrese el número de interacciones: ");
+    scanf("%d", &numInteracciones);
+
+    // Mostrar la tabla de multiplicar del primer valor con el número de interacciones especificado
+    printf("Resultado:\n");
+
+    // Utilizar un bucle for para iterar de 1 a numInteracciones e imprimir las multiplicaciones
+    for (int i = 1; i <= numInteracciones; i++) {
+        printf("%d x %d = %d\n", primerValor, i, primerValor * i);
+    }
+
+    return 0;
+}
