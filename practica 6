@@ -1,0 +1,43 @@
+/* 
+Institución: Instituto Politécnico Nacional - IPN 
+Plantel: Escuela Superior de Ingeniería Mecánica y Eléctrica 
+Unidad: ESIME - Culhuacán 
+Materia: Fundamentos de programación 
+Grupo: 1MV15 
+Nombre: Wilberth Salatiel Rosas Huerta
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    char opcion;
+
+    // Solicitar al usuario un valor de tipo carácter
+    printf("Ingrese un valor de tipo carácter: ");
+    scanf(" %c", &opcion); // Usamos " %c" para ignorar espacios en blanco y saltos de línea
+
+    // Utilizar switch-case para dirigirse al caso correspondiente según el carácter ingresado
+    switch (opcion) {
+        case 'a':
+            printf("Usted entró al case 'a'\n");
+            break;
+        case 'b':
+            printf("Usted entró al case 'b'\n");
+            break;
+        case 'c':
+            printf("Usted entró al case 'c'\n");
+            break;
+        case 'd':
+            printf("Usted entró al case 'd'\n");
+            break;
+        case 'e':
+            printf("Usted entró al case 'e'\n");
+            break;
+        default:
+            printf("No contamos con esa opción\n");
+            break;
+    }
+
+    return 0;
+}
