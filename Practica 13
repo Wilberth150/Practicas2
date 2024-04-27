@@ -1,0 +1,42 @@
+/* 
+Institución: Instituto Politécnico Nacional - IPN 
+Plantel: Escuela Superior de Ingeniería Mecánica y Eléctrica 
+Unidad: ESIME - Culhuacán 
+Materia: Fundamentos de programación 
+Grupo: 1MV15 
+Nombre: Wilberth Salatiel Rosas Huerta
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int opcion;
+
+    // Mostrar el menú y solicitar la opción al usuario utilizando do-while
+    do {
+        // Mostrar el menú y solicitar la opción al usuario
+        printf("\nMenú de opciones:\n"
+               "1. Suma\n"
+               "2. Resta\n"
+               "3. Multiplicación\n"
+               "4. División\n"
+               "5. Residuo\n"
+               "6. Raíz cuadrada\n"
+               "7. Acerca de\n\n");
+
+        // Solicitar al usuario que proporcione el número de una de las opciones del menú
+        printf("Elija una opción del menú (1-7): ");
+        scanf("%d", &opcion);
+
+        // Validar si la opción está dentro del rango de 1 a 7
+        if (opcion >= 1 && opcion <= 7) {
+            printf("OPCIÓN VÁLIDA\n");
+        } else {
+            printf("El número proporcionado NO ES VÁLIDO. Intente de nuevo.\n");
+        }
+
+    } while (opcion < 1 || opcion > 7); // Repetir el bucle mientras la opción no esté en el rango correcto
+
+    return 0;
+}
